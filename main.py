@@ -21,9 +21,9 @@ def main():
 
     # Pick both players, User or RandomBot require a Player parameter...
     black_bot = User(Player.black)
-    # ...and CheckerBot does too. An optional parameter is a integer
+    # ...and CheckerBot does too. An optional parameter is an integer
     # that represents the depth for the Bot. By default is 6.
-    white_bot = CheckersBot(Player.white, 8)
+    white_bot = CheckersBot(Player.white)
 
     # Start Game class selecting how many games will be played.
     game = Game(1)
