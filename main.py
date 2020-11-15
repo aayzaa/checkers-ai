@@ -23,7 +23,7 @@ def main():
     black_bot = User(Player.black)
     # ...and CheckerBot does too. An optional parameter is a integer
     # that represents the depth for the Bot. By default is 6.
-    white_bot = CheckersBot(Player.white, 5)
+    white_bot = CheckersBot(Player.white, 8)
 
     # Start Game class selecting how many games will be played.
     game = Game(1)
