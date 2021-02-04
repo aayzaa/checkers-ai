@@ -74,7 +74,7 @@ Finally, I created some classes to be able to play against the bot in a easier w
 
 At all stages, I tested the bot making it play against online bots. There were some losses, since some of the bots online are using a more refined version of minimax (implementing better evaluation rules) or by using some sort of montecarlo algorithm. Regardless of that, I was happy to see that some bots lost against the one I created, specially as I increased the deepthness of the search. 
 
-_PS: I thought that it would be a good idea to try the bot against myself, but I stopped after I lost 10 games in a row... So I sticked with the online bots 🙂._
+_PS: I thought that it would be a good idea to try the bot against myself, but I lost 5 games in a row... So I decided to stick with the online bots 🙂._
 
 ## Experiment 🔬
 
