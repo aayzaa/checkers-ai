@@ -56,8 +56,9 @@ class Display:
 
         """
         print()
+        print("     ------------------------")
         for row in range(constant.BOARD_DIMENSION):
-            line = []
+            line = [' ' + str(constant.BOARD_DIMENSION - row) + ' | ']
             for col in range(constant.BOARD_DIMENSION):
                 piece = self.board.get_piece((row, col))
                 if piece is None:
@@ -70,7 +71,11 @@ class Display:
                     line.append(' w ')
                 else:
                     line.append(' b ')
+            line.append(" | ")
             print('%s' % (''.join(line)))
+        print("     ------------------------")
+        print("      a  b  c  d  e  f  g  h ")
+        print()
 
     def print_pieces_left(self):
         """Displays the number of pieces left on each side."""

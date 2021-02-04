@@ -41,3 +41,13 @@ This matrix takes into account that the pieces on the first row are strong,
     control of the center is important.
 
 """
+
+COLUMNS_TO_LETTERS = {1: 'a',
+                      2: 'b',
+                      3: 'c',
+                      4: 'd',
+                      5: 'e',
+                      6: 'f',
+                      7: 'g',
+                      8: 'h'}
+"""Used to translate the columns position to letters for user board reading."""

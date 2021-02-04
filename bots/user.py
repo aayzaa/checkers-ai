@@ -12,6 +12,13 @@
 alexayzaleon@gmail.com
 """
 
+import checkers.constants as constant
+
+
+def translate_move(move):
+    row = str(constant.BOARD_DIMENSION - move[0])
+    col = constant.COLUMNS_TO_LETTERS[move[1] + 1]
+    return col + row
 
 class User:
     """User class that allows an external agent to pick moves.
@@ -57,14 +64,15 @@ class User:
 
         # Loops through the legal moves.
         for i in range(len(candidates)):
-            print(str(i) + ' : ' + str(candidates[i][0]) + " to " + str(candidates[i][1]))
+            print(str(i) + ' : ' + translate_move(candidates[i][0]) + " to " + translate_move(candidates[i][1]))
 
         # Checks for the user selected move.
         correct_input = False
         while not correct_input:
-            choice = input("Pick with a number")
+            choice = input("Pick move: ")
             if len(candidates) > int(choice) >= 0:
                 # Small test to avoid the program to crash on simple mistakes.
                 correct_input = True
 
         return candidates[int(choice)]
+

@@ -76,7 +76,8 @@ class Game:
 
                 if print_game:
                     self.display.print_board()
-                    self.display.print_pieces_left()
+                    # Uncomment to see the number of pieces left
+                    # self.display.print_pieces_left()
 
                 current_turn = current_turn.other
 
