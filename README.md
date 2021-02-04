@@ -1,4 +1,4 @@
-# Checkers AI
+# ♟ Checkers AI ♟
 
 _Python-based AI for Checkers, using a minimax algorithm with alpha-beta pruning._
 
@@ -12,9 +12,9 @@ python3
 
 ### Use
 
-Download the files and execute main.py. The program will display the current board state after each move. The bot moves will take place automatically after a small number of seconds.
+Download the files and execute main.py. The program will display the current board state after each move. The **bot moves will take place automatically** after a small number of seconds.
 
-For the user moves, the program will show a list of possible moves. To select one, introduce the number shown next to it. The moves show the origin coordinates and the ending ones. Example:
+For the **user moves**, the program will show a list of possible moves. To select one, introduce the number shown next to it. The moves show the origin coordinates and the ending ones. Example:
 
 ```
      ------------------------
@@ -79,7 +79,7 @@ _PS: I thought that it would be a good idea to try the bot against myself, but I
 ## Experiment 🔬
 
 In order to alter the color of the players or make bots play against each other, modify lines 26 and 29 on main.py.
-There you can also modify the depth of the ```CheckersBot```, which determines how many moves in advance will the computer consider. Increase the depth if you want to improve the bot. Watch out though, the program is not the most optimized (sorry!), so higher values will consume more resources on your computer, sometimes to the point of not working.
+There you can also modify the depth of the ```CheckersBot```, which determines how many moves in advance will the computer consider. **Increase the depth if you want to improve the bot**. Watch out though, the program is not the most optimized (sorry!), so higher values will consume more resources on your computer, sometimes to the point of not working.
 
 ```
     # Pick both players, User or RandomBot require a Player parameter...
@@ -106,7 +106,9 @@ Other parameters can be tweaked in main.py. For example, to test how well does t
     # the board), and who will have the first turn.
     game.simulate(white_bot, black_bot, False, Player.white)
 ```
+
 Result:
+
 ```
 White wins: 9
 Black wins: 0
@@ -121,7 +123,7 @@ Ties: 1
 
 1.1
 
-_+ Better user interface added. The one before was too confusing with the coordinates system.
+_+ Better user interface added. The one before was too confusing with the coordinates system._
 
 ## Authors ✒️
 
