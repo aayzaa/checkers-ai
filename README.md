@@ -60,9 +60,9 @@ Pick move: exit
 
 ## Process 👩🏽‍💻
 
-My focus when creating this project was to put in practice the theory from an AI course on my university. In that exact course there was not a practical project where to develop a game AI, so I decided to create one by myself using the game of checkers.
+My focus when creating this project was to put in practice the theory from an AI course on my university. In that exact course there was not a practical project to develop a game AI, which is a field that has always interested me, so I decided to create one by myself using the game of checkers.
 
-The approach I use was to **create the rules of the game and the game itself first**, before creating a bot capable of playing it. In order to do that I created classes for a Player, the Pieces, the Board and some other helper classes used to create a game or display the information onscreen.
+The approach I used was to **create the rules of the game and the game itself** before creating a bot capable of playing it. In order to do that I created classes for a Player, the Pieces, the Board and some other helper classes used to create a game or display the information onscreen.
 
 After I had a playable checkers program, I **introduced the bots**. In order to do that, the **board always exports a list of possible moves**. The idea is that the bot recollects this possible moves, and performs a **minimax algorithm** by checking the ending board states after X number of moves. 
 
