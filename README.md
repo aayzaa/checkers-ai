@@ -66,7 +66,7 @@ The approach I used was to **create the rules of the game and the game itself** 
 
 After I had a playable checkers program, I **introduced the bots**. In order to do that, the **board always exports a list of possible moves**. The idea is that the bot recollects this possible moves, and performs a **minimax algorithm** by checking the ending board states after X number of moves. 
 
-At first, the program took too long to calculate more than 3/4 moves ahead, so I **added alpha-beta pruning to the algorithm in order to speed up the process**.
+At first, the program took too long to calculate more than 3 or 4 moves ahead, so I **added alpha-beta pruning to the algorithm in order to speed up the process**.
 
 Finally, I created some classes to be able to play against the bot in a easier way (as easy as a command-line can get!).
 
